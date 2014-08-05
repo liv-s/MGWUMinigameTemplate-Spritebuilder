@@ -22,6 +22,7 @@
     
     // We're calling a public method of the character that tells it to jump!
     [self.hero jump];
+    self.userInteractionEnabled = YES;
 }
 
 -(void)onEnter {
@@ -46,5 +47,11 @@
     return (MyCharacter *)self.character;
 }
 // DO NOT DELETE!
+-(void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
+    [self.hero smallJump];
+}
+
+
+
 
 @end

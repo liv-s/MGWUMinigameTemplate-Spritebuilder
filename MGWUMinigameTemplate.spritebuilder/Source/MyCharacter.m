@@ -97,5 +97,9 @@
 -(void)jump {
     self.physicsBody.velocity = ccp(0,122);
 }
+-(void)smallJump{
+    self.physicsBody.velocity = ccp(0,100);
+}
+
 
 @end

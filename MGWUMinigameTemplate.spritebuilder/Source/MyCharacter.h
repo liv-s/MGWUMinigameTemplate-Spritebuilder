@@ -10,5 +10,5 @@
 @interface MyCharacter : MGWUCharacter
 
 -(void)jump;
-
+-(void)smallJump;
 @end
